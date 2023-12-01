@@ -57,7 +57,6 @@ const command = new SlashCommand()
     });
 
     let query = options.getString("query", true);
-    console.log(interaction)
     let res = await player.search(query, interaction.user).catch((err) => {
       client.error(err);
       return {

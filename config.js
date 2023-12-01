@@ -23,12 +23,12 @@ module.exports = {
 	nodes: [
 		{
 			identifier: "Main Node", //- Used for indentifier in stats commands.
-			host: "localhost", //- The host name or IP of the lavalink server.
-			port: 2334, // The port that lavalink is listening to. This must be a number!
-			password: "e0krPn7)yX<@j=REb!x?dWtY", //- The password of the lavalink server.
+			host: "lava1.horizxon.tech", //- The host name or IP of the lavalink server.
+			port: 443, // The port that lavalink is listening to. This must be a number!
+			password: "horizxon.tech", //- The password of the lavalink server.
 			retryAmount: 50, //- The amount of times to retry connecting to the node if connection got dropped.
 			retryDelay: 40, //- Delay between reconnect attempts if connection is lost.
-			secure: false, //- Can be either true or false. Only use true if ssl is enabled!
+			secure: true, //- Can be either true or false. Only use true if ssl is enabled!
 		},
 	],
 	embedColor: "#2f3136", //- Color of the embeds, hex supported
@@ -37,7 +37,7 @@ module.exports = {
 		status: "online", //- You can have online, idle, dnd and invisible (Note: invisible makes people think the bot is offline)
 		activities: [
 			{
-				name: "un bon gros boulard", //- Status Text
+				name: "un bon boulard", //- Status Text
 				type: "WATCHING", //- PLAYING, WATCHING, LISTENING, STREAMING
 			},
 		],

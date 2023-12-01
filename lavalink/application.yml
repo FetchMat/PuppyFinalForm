@@ -1,8 +1,8 @@
 server: # REST and WS server
-  port: 2334
-  address: localhost
+  port: 443
+  address: lava1.horizxon.tech
   http2:
-    enabled: true # Whether to enable HTTP/2 support
+    enabled: false # Whether to enable HTTP/2 support
 plugins:
 #  name: # Name of the plugin
 #    some_key: some_value # Some key-value pair for the plugin
@@ -16,7 +16,7 @@ lavalink:
 #  defaultPluginRepository: "https://maven.lavalink.dev/releases" # optional, defaults to the Lavalink release repository
 #  defaultPluginSnapshotRepository: "https://maven.lavalink.dev/snapshots" # optional, defaults to the Lavalink snapshot repository
   server:
-    password: "e0krPn7)yX<@j=REb!x?dWtY"
+    password: "horizxon.tech"
     sources:
       youtube: true
       bandcamp: false
