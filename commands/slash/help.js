@@ -8,6 +8,7 @@ const {
 } = require("discord.js");
 const LoadCommands = require("../../util/loadCommands");
 const { filter } = require("lodash");
+const { adminId } = require("../../config");
 
 const command = new SlashCommand()
 	.setName("help")
@@ -45,7 +46,7 @@ const command = new SlashCommand()
 		const helpEmbed = new MessageEmbed()
 			.setColor(client.config.embedColor)
 			.setAuthor({
-				name: `Commands of ${ client.user.username }`,
+				name: `Liste des commandes`,
 				iconURL: client.config.iconURL,
 			})
 			.setTimestamp()
@@ -58,15 +59,12 @@ const command = new SlashCommand()
 		);
 		
 		tempArray.forEach((cmd) => {
-			helpEmbed.addField(cmd.name, cmd.description);
+			helpEmbed.addFields(cmd.name, cmd.description);
 		});
-		helpEmbed.addField(
+		helpEmbed.addFields(
 			"Credits",
-			`Discord Music Bot Version: v${
-				require("../../package.json").version
-			}; Build: ${ gitHash }` +
-			"\n" +
-			`[✨ Support Server](${ client.config.supportServer }) | [Issues](${ client.config.Issues }) | [Source](https://github.com/SudhanPlayz/Discord-MusicBot/tree/v5) | [Invite Me](https://discord.com/oauth2/authorize?client_id=${ client.config.clientId }&permissions=${ client.config.permissions }&scope=bot%20applications.commands)`,
+			`Discord Music Bot Version: @5.0.0 adapté par ${adminId}\n`
+			`[Invite moi](https://discord.com/oauth2/authorize?client_id=${ client.config.clientId }&permissions=${ client.config.permissions }&scope=bot%20applications.commands)`,
 		);
 		
 		// Construction of the buttons for the embed
@@ -112,10 +110,10 @@ const command = new SlashCommand()
 			tempArray.forEach((cmd) => {
 				//console.log(cmd);
 				helpEmbed
-					.addField(cmd.name, cmd.description)
+					.addFields(cmd.name, cmd.description)
 					.setFooter({ text: `Page ${ pageNo + 1 } / ${ maxPages }` });
 			});
-			helpEmbed.addField(
+			helpEmbed.addFields(
 				"Credits",
 				`Discord Music Bot Version: v${
 					require("../../package.json").version
