@@ -45,8 +45,9 @@
     "better-erela.js-spotify": "1.3.9",
     "colors": "1.3.3",
     "discord-api-types": "0.37.1",
+    "discord-player": "^5.0.0",
     "discord-together": "^1.3.25",
-    "discord.js": "^13.8.0",
+    "discord.js": "^13.17.1",
     "dotenv": "^16.0.1",
     "ejs": "^3.1.6",
     "erela.js": "^2.3.3",
@@ -59,6 +60,7 @@
     "express-ws": "^5.0.2",
     "js-yaml": "^4.1.0",
     "jsoning": "^0.13.0",
+    "lavaplayer": "^0.0.1",
     "lodash": "^4.17.21",
     "lyrics-searcher-musixmatch": "1.0.2",
     "moment": "^2.29.1",
@@ -67,9 +69,11 @@
     "os": "^0.1.2",
     "passport": "^0.6.0",
     "passport-discord": "^0.1.4",
+    "play-dl": "^1.9.7",
     "pretty-ms": "^7.0.1",
     "systeminformation": "^5.9.12",
-    "winston": "^3.3.3"
+    "winston": "^3.3.3",
+    "ytdl-core": "^4.11.5"
   },
   "devDependencies": {
     "prettier": "2.6.2"
