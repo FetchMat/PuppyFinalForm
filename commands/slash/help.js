@@ -58,9 +58,9 @@ const command = new SlashCommand()
 		);
 		
 		tempArray.forEach((cmd) => {
-			helpEmbed.addField(cmd.name, cmd.description);
+			helpEmbed.addFields(cmd.name, cmd.description);
 		});
-		helpEmbed.addField(
+		helpEmbed.addFields(
 			"Credits",
 			`Discord Music Bot Version: v${
 				require("../../package.json").version
@@ -112,10 +112,10 @@ const command = new SlashCommand()
 			tempArray.forEach((cmd) => {
 				//console.log(cmd);
 				helpEmbed
-					.addField(cmd.name, cmd.description)
+					.addFields(cmd.name, cmd.description)
 					.setFooter({ text: `Page ${ pageNo + 1 } / ${ maxPages }` });
 			});
-			helpEmbed.addField(
+			helpEmbed.addFields(
 				"Credits",
 				`Discord Music Bot Version: v${
 					require("../../package.json").version

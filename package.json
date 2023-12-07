@@ -50,7 +50,7 @@
     "ejs": "^3.1.6",
     "erela.js": "^2.3.3",
     "erela.js-deezer": "^1.0.7",
-    "erela.js-facebook": "^1.0.4",
+    "erela.js-facebook": "^1.0.3",
     "erela.js-filters": "^1.2.6",
     "express": "^4.17.1",
     "express-rate-limit": "^6.2.0",
@@ -59,16 +59,16 @@
     "js-yaml": "^4.1.0",
     "jsoning": "^0.13.0",
     "lodash": "^4.17.21",
+    "lyrics-searcher-musixmatch": "1.0.2",
     "moment": "^2.29.1",
     "moment-duration-format": "^2.3.2",
-    "node-fetch": "2.6.6",
+    "node-fetch": "^2.7.0",
     "os": "^0.1.2",
     "passport": "^0.6.0",
     "passport-discord": "^0.1.4",
     "pretty-ms": "^7.0.1",
     "systeminformation": "^5.9.12",
-    "winston": "^3.3.3",
-    "lyrics-searcher-musixmatch": "1.0.2"
+    "winston": "^3.3.3"
   },
   "devDependencies": {
     "prettier": "2.6.2"
