@@ -1,5 +1,6 @@
 <h1 align="center"><img src="./assets/logo.gif" width="30px"> Discord Music Bot <img src="./assets/logo.gif" width="30px"></h1>
-## JUST TO KNOW
+
+##  | TAMIAS
 If youtube links or text doesn't work, maybe it's the lavalink srv. try to find a new one here https://lavalink-list.darrennathanael.com/ or create one yourself https://darrennathanael.com/post/how-to-lavalink
 
 
