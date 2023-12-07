@@ -64,8 +64,6 @@ const command = new SlashCommand()
       };
     });
 
-    console.log(res)
-
     if (res.loadType === "LOAD_FAILED") {
       if (!player.queue.current) {
         player.destroy();
